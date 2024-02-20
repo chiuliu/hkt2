@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Projects</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    form {
+      display: flex;
+      margin-top: 40px;
+    }
+  </style>
+  <body>
+    <h1>My Projects</h1>
+    <!-- Form người dùng nhập -->
+    <form id="form-input">
+      <!-- <label>ID</label>
+      <input type="text" id="id-project" />
+      <br /> -->
+
+      <label>@</label>
+      <input placeholder="Project Name" type="text" id="name-project" />
+      <br />
+
+      <label>@ </label>
+      <input placeholder="Image URL" type="text" id="image-project" />
+      <br />
+
+      <label>@</label>
+      <input placeholder="Link" type="text" id="link-project" />
+      <br />
+
+      <label>@</label>
+      <input
+        placeholder="Tags (Ex: React,Angular)"
+        type="text"
+        id="tag-project"
+      />
+      <br />
+
+      <button type="submit" id="btn-submit">+ New Project</button>
+    </form>
+
+    <!-- Hiển thị dữ liệu -->
+    <table border="1">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Project Name</th>
+          <th>Image URL</th>
+          <th>Link</th>
+          <th>Tags</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+
+      <tbody id="tbody-table"></tbody>
+    </table>
+
+    <script src="./Portfolio.js"></script>
+  </body>
+</html>
